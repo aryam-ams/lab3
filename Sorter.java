@@ -4,10 +4,10 @@ public class Sorter {
         for (int i = 0; i < Array.length; i++) {
             Array[i] = (int) (Math.random() * 100);
         }
+        System.out.println("before sort");
         for(int x: Array){
             System.out.print(x + " ");
         }
-        selectionSort(Array);
     }
 
     public static void selectionSort(int[] arr) {
@@ -27,7 +27,7 @@ public class Sorter {
             System.out.print(x + " ");
         }
     }
-    public static void insertionSort(int[] array) {
+    public static void insertionSort(int[] array){
         int n = array.length;
         for (int i = 1; i < n; ++i) {
             int key = array[i];
