@@ -31,5 +31,6 @@ public class GitClass {
     }
     public static void randomgrouping(){
         System.out.println("groups made!");
+         System.out.println("Hi");
     }
 }
