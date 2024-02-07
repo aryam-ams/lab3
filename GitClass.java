@@ -29,4 +29,7 @@ public class GitClass {
             System.out.println(x);
         }
     }
+    public static void randomgrouping(){
+        System.out.println("groups made!");
+    }
 }
