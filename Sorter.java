@@ -8,6 +8,7 @@ public class Sorter {
         for(int x: Array){
             System.out.print(x + " ");
         }
+        sort(Array);
     }
 
     public static void selectionSort(int[] arr) {
@@ -15,14 +16,14 @@ public class Sorter {
             int index = i;
             for (int j = i + 1; j < arr.length; j++) {
                 if (arr[j] < arr[index]) {
-                    index = j;//searching for lowest index
+                    index = j;
                 }
             }
             int smallerNumber = arr[index];
             arr[index] = arr[i];
             arr[i] = smallerNumber;
         }
-        System.out.println("\nafter sort");
+        System.out.println("\nafter selection sort");
         for(int x: arr){
             System.out.print(x + " ");
         }
@@ -46,5 +47,9 @@ public class Sorter {
 
     public static void Sort(int[] array) {
         insertionSort(array);
+    }
+
+    public static void sort(int[] array){
+        selectionSort(array);
     }
 }
