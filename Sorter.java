@@ -9,6 +9,7 @@ public class Sorter {
             System.out.print(x + " ");
         }
         sort(Array);
+        Sort(Array);
     }
 
     public static void selectionSort(int[] arr) {
@@ -40,6 +41,7 @@ public class Sorter {
             }
             array[j + 1] = key;
         }
+        System.out.println("\nafter insertion sort");
         for(int i =0; i<n;i++){
             System.out.print(array[i] + " ");
         }
